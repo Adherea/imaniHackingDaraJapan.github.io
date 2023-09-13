@@ -42,7 +42,25 @@
       </div>
 
       <div class="contact" id="registrasi">
-        <a href="https://bit.ly/bootcampdaraxcf" target="_blank" class="btn">Contact us! <i class="fa-regular fa-paper-plane"></i></a>
+        <button class="btn" id="openPopup">Contact us! <i class="fa-regular fa-paper-plane"></i></button>
+        <!-- <a href="https://bit.ly/bootcampdaraxcf" target="_blank" class="btn" id="openPopup">Contact us! <i class="fa-regular fa-paper-plane"></i></a> -->
+      </div>
+
+      <div class="popup" id="myPopup">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+        <button class="btn-close" id="closePopup"></button>
       </div>
     </nav>
 
@@ -75,20 +93,6 @@
 
     <!-- ABOUT SECTION START-->
     <section class="about animate-left" id="about">
-      <h1 class="fw-semibold" style="text-align: center">About Us</h1>
-      <div class="story" data-aos="fade-right">
-        <div class="paragraph">
-          <h1>Why ”Imani Hacking “?</h1>
-          <p>
-            Welcome to IMANI HACKING BOOTCAMP, where we transform knowledge into formidable skills. We're a dedicated tech training center committed to helping you reach your IT potential. With expert-designed bootcamp programs for
-            beginners and professionals, we offer flexibility through online learning. Join us on the journey to IT excellence and innovation.
-          </p>
-          <a href="https://bit.ly/bootcampdaraxcf" target="_blank" class="btn">Read more <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i></a>
-        </div>
-        <div>
-          <img width="450px" src="images/vectors/children.png" alt="" />
-        </div>
-      </div>
       <div class="visionMission">
         <div class="image">
           <img width="300px" src="images/support/Picture1.png" alt="" />
@@ -104,6 +108,21 @@
             <h1>MISSION</h1>
             <p>To achieve the goal be an experienced Engineer and the soft skills to work as one global team</p>
           </div>
+        </div>
+      </div>
+      <br /><br /><br />
+      <h1 class="fw-semibold" style="text-align: center">About Us</h1>
+      <div class="story" data-aos="fade-right">
+        <div class="paragraph">
+          <h1>Why ”Imani Hacking “?</h1>
+          <p>
+            Welcome to IMANI HACKING BOOTCAMP, where we transform knowledge into formidable skills. We're a dedicated tech training center committed to helping you reach your IT potential. With expert-designed bootcamp programs for
+            beginners and professionals, we offer flexibility through online learning. Join us on the journey to IT excellence and innovation.
+          </p>
+          <a href="https://bit.ly/bootcampdaraxcf" target="_blank" class="btn">Read more <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i></a>
+        </div>
+        <div>
+          <img width="450px" src="images/vectors/children.png" alt="" />
         </div>
       </div>
     </section>
@@ -339,11 +358,6 @@
     </section>
 
     <!-- MENTORS SECTION END -->
-
-    <section class="questions">
-      <h1>Still have a questions? click the link in down below:</h1>
-      <a href="https://bit.ly/bootcampdaraxcf" target="_blank" class="btn">Message Here <i class="fa-regular fa-paper-plane"></i></a>
-    </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path

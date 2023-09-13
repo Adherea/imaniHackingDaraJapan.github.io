@@ -70,6 +70,59 @@ nav {
     transition: 0.3s linear;
     border: 2px solid #fff;
   }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 370px;
+    color: black;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 50%;
+    border-radius: 30px;
+    height: 60vh;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .popup h2 {
+    text-align: center;
+  }
+
+  .popup form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popup label {
+    margin-bottom: 10px;
+  }
+
+  .popup input,
+  .popup textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .popup button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .btn-close {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }
 
 .menu-toggle {
@@ -235,7 +288,7 @@ nav {
   margin-top: 160px;
   padding: 100px 0;
   img {
-    width: 56vw;
+    width: 76vw;
   }
   .flag {
     width: 200px;
@@ -338,7 +391,7 @@ nav {
 .swiper {
   max-width: 1200px;
   padding: 0 300px;
-
+  margin-bottom: 180px;
   div:hover {
     cursor: grab;
   }
@@ -350,9 +403,10 @@ nav {
     border-radius: 30px 30px 0px 0;
   }
   #background-paragraph {
+    margin-bottom: 100px;
     background-color: #fff;
     margin-top: -30px;
-    padding: 20px 0;
+    padding: 40px 0;
     border-radius: 40px 40px 30px 30px;
   }
   a {
@@ -391,21 +445,6 @@ nav {
   }
   img {
     width: 300px;
-  }
-}
-
-.questions {
-  max-width: 60vw;
-  margin: 320px auto;
-  line-height: 70px;
-  text-align: center;
-  h1 {
-    font-size: 19px;
-  }
-
-  a {
-    background-color: #2568ef;
-    color: #fff;
   }
 }
 
@@ -513,6 +552,20 @@ footer {
     }
   }
 
+  .countries {
+    background-color: #add8e6;
+    margin-top: 160px;
+    img {
+      width: 56vw;
+    }
+    .flag {
+      width: 110px;
+      height: 100px;
+      margin: 50px 0;
+      border-radius: 50%;
+    }
+  }
+
   footer {
     flex-direction: column;
     align-items: start;
@@ -572,13 +625,14 @@ footer {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 80px 20px;
+    padding: 20px 20px;
     background-color: #add8e6;
     p {
       margin: 20px 0;
     }
     img {
-      max-width: 300px;
+      padding-top: 60px;
+      max-width: 360px;
     }
   }
 
