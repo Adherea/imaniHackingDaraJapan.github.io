@@ -246,7 +246,8 @@ nav .btn-close {
   padding: 20px 30px;
 }
 .about .visi,
-.about .mission {
+.about .mission,
+.about .why {
   flex-direction: column;
 }
 .about .visi {
