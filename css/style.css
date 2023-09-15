@@ -78,10 +78,10 @@ nav .popup {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  width: 50%;
+  width: 40%;
   border-radius: 30px;
-  height: 60vh;
-  padding: 50px;
+  height: 70vh;
+  padding: 50px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 nav .popup h2 {
@@ -246,8 +246,7 @@ nav .btn-close {
   padding: 20px 30px;
 }
 .about .visi,
-.about .mission,
-.about .why {
+.about .mission {
   flex-direction: column;
 }
 .about .visi {
@@ -267,7 +266,7 @@ nav .btn-close {
   padding: 100px 0;
 }
 .countries img {
-  width: 76vw;
+  width: 57vw;
 }
 .countries .flag {
   width: 200px;
@@ -520,6 +519,12 @@ footer .address a {
   footer {
     flex-direction: column;
     align-items: start;
+  }
+}
+@media screen and (max-width: 1366px) {
+  nav .popup {
+    margin-top: 0px;
+    height: 70vh;
   }
 }
 @media screen and (max-width: 576px) {

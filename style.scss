@@ -79,10 +79,10 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    width: 50%;
+    width: 40%;
     border-radius: 30px;
-    height: 60vh;
-    padding: 50px;
+    height: 70vh;
+    padding: 50px 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
@@ -288,7 +288,7 @@ nav {
   margin-top: 160px;
   padding: 100px 0;
   img {
-    width: 76vw;
+    width: 57vw;
   }
   .flag {
     width: 200px;
@@ -526,6 +526,7 @@ footer {
 @media screen and (max-width: 768px), (max-width: 820px) {
   nav {
     justify-content: space-around;
+
     ul {
       width: 60%;
     }
@@ -569,6 +570,15 @@ footer {
   footer {
     flex-direction: column;
     align-items: start;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  nav {
+    .popup {
+      margin-top: 0px;
+      height: 70vh;
+    }
   }
 }
 
