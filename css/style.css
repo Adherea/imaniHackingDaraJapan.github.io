@@ -521,10 +521,16 @@ footer .address a {
     align-items: start;
   }
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px), (max-width: 600px), (max-width: 912px) {
   nav .popup {
-    margin-top: 0px;
+    margin-top: 20px;
     height: 70vh;
+  }
+}
+@media screen and (max-height: 600px) {
+  nav .popup {
+    margin-top: -70px;
+    height: 90vh;
   }
 }
 @media screen and (max-width: 576px) {
@@ -612,6 +618,12 @@ footer .address a {
   }
   .about .mission {
     margin: 70px 0;
+  }
+  #service img {
+    width: 100px;
+  }
+  #service p {
+    margin-top: -25px;
   }
   .countries .nationality img {
     width: 300px;
