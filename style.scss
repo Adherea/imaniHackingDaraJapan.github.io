@@ -65,10 +65,15 @@ nav {
     }
   }
   .contact {
-    background-color: #ffcc31;
-    border-radius: 10px;
-    transition: 0.3s linear;
-    border: 2px solid #fff;
+    button {
+      background-color: transparent;
+      color: #407bff;
+      border: 2px solid #407bff;
+      border-radius: 16px;
+    }
+    button:hover {
+      border: 2px solid #fff;
+    }
   }
 
   .popup {
@@ -84,6 +89,13 @@ nav {
     height: 70vh;
     padding: 50px 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    form {
+      input,
+      textarea {
+        border-radius: 11px;
+        border: 2px solid rgb(209, 209, 209);
+      }
+    }
   }
 
   .popup h2 {
@@ -109,6 +121,9 @@ nav {
     background-color: #007bff;
     color: #fff;
     border: none;
+    width: 300px;
+    border-radius: 11px;
+    margin: 0 auto;
     padding: 10px 20px;
     cursor: pointer;
   }
@@ -184,10 +199,16 @@ nav {
 .hero {
   display: flex;
   flex-direction: row-reverse;
+  background-size: cover;
   align-items: center;
   justify-content: space-around;
   background-color: #add8e6;
-  padding: 3.4rem 2.4rem;
+  // padding: 3.4rem 2.4rem;
+  padding-top: 70px;
+  padding-bottom: 0;
+  img {
+    max-width: 30vw;
+  }
 
   h1 {
     font-size: 2.2rem;
@@ -254,7 +275,7 @@ nav {
 
   .visionMission {
     display: flex;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     flex-direction: row-reverse;
     gap: 70px;
@@ -266,6 +287,13 @@ nav {
   .visi,
   .mission {
     flex-direction: column;
+    h1 {
+      font-size: 28px;
+      font-weight: bolder;
+    }
+    p {
+      font-size: 30px;
+    }
   }
 
   .visi {
@@ -277,7 +305,6 @@ nav {
 
 // KONTEN SECTION START
 .konten {
-  margin-top: 120px;
   #awd {
     background-color: #0e9ac5;
   }
@@ -287,6 +314,10 @@ nav {
   background-color: #add8e6;
   margin-top: 160px;
   padding: 100px 0;
+  color: #000080;
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
   img {
     width: 57vw;
   }
@@ -361,8 +392,6 @@ nav {
 }
 
 .facility {
-  max-width: 900px;
-  margin: 0 auto;
   margin-top: 130px;
   padding-top: 100px;
   display: flex;
@@ -386,6 +415,7 @@ nav {
 
 #service {
   padding-top: 120px;
+  margin: 50px 0;
 }
 
 .swiper {
@@ -447,6 +477,100 @@ nav {
     width: 300px;
   }
 }
+
+.starting {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 200px;
+  text-align: center;
+  // background-image: url("/images/assets2/pattern-circles.png");
+}
+
+// PRICE START
+.harga {
+  margin: 140px auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: none !important;
+  box-shadow: 20px 0px 50px 0px rgb(240, 240, 240);
+  .title {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  hr {
+    color: #c7c7c7 !important;
+  }
+
+  #note {
+    margin-top: 70px;
+  }
+  #benefit {
+    max-width: 500px;
+    line-height: 10px;
+  }
+  .lower {
+    a {
+      border-radius: 10px;
+      padding: 7px 20px;
+      color: #fff7f7;
+      border: 2px solid #407bff;
+      background-color: #407bff;
+      font-weight: bold;
+      border-radius: 20px;
+    }
+    a:hover {
+      border: 2px solid #fff;
+      background-color: #6e99f7;
+      color: #fff;
+    }
+    i > p {
+      color: black !important;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.harga:hover {
+  cursor: default;
+}
+// PRICE END
+
+// NEWS START
+
+#news {
+  padding-top: 40px;
+  .swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+        padding: 50px 20px;
+      }
+    }
+  }
+  img {
+    width: auto;
+    border-radius: 0;
+  }
+  h1 {
+    margin: 32px 0;
+  }
+  .border {
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px;
+
+    padding: 40px 20px;
+    transition: 0.3s linear;
+  }
+  .border:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #f8f8f8;
+    box-shadow: 20px 10px 110px 10px #dbdbdb;
+  }
+}
+// NEWS END
 
 // FOOTER START
 
@@ -519,6 +643,89 @@ footer {
 }
 // FOOTER END
 
+#schedule {
+  img {
+    max-width: 850px;
+    margin: 20px 0;
+    margin-left: -100px;
+  }
+}
+
+// registration section
+
+.registration {
+  max-width: 800px;
+  margin: 90px auto;
+  .container {
+    background-color: #fff;
+    height: 60vh;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 20px 10px 110px 10px #73b6e3;
+    h1 {
+      text-align: center;
+      width: 170px;
+      margin: 0 auto;
+      border-bottom: 2px solid #73b6e3;
+    }
+
+    .inputRegistration {
+      display: flex;
+      justify-content: space-around;
+      .section1,
+      .section2 {
+        display: flex;
+        margin: 20px;
+        flex-direction: column;
+        input {
+          margin: 7px 0;
+          border: 2px solid rgb(231, 231, 231);
+        }
+      }
+
+      label {
+        font-size: 17px;
+        font-weight: bolder;
+        margin: 7px 0;
+      }
+      .section1 {
+        input {
+          width: 280px;
+        }
+      }
+      .section2 {
+        input {
+          width: 280px;
+        }
+      }
+      input {
+        padding: 9px 12px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  button {
+    background-color: #0097db;
+    border: none;
+    padding: 9px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bolder;
+    width: 760px;
+    font-size: 21px;
+    margin-top: 80px;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+
+  .terms {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
 /*
 =============================================================================================================================================================================================================================================================================================================
 
@@ -567,9 +774,39 @@ footer {
     }
   }
 
+  #schedule {
+    img {
+      max-width: 45rem;
+      margin: 20px 0;
+    }
+  }
+
   footer {
     flex-direction: column;
     align-items: start;
+  }
+  .registration {
+    margin-top: 40px;
+    .container {
+      margin: 20px;
+      height: 100%;
+      flex-direction: column;
+      form {
+        button {
+          width: 100%;
+        }
+      }
+    }
+    .inputRegistration {
+      // flex-direction: column;
+      margin-top: 30px;
+      .section1,
+      .section2 {
+        input {
+          max-width: 240px !important;
+        }
+      }
+    }
   }
 }
 
@@ -644,14 +881,16 @@ footer {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 20px 20px;
+    // margin-top: -140px;
+    padding: 50px 20px;
     background-color: #add8e6;
-    p {
-      margin: 20px 0;
+    p,
+    h1 {
+      margin: 32px 0;
     }
     img {
       padding-top: 60px;
-      max-width: 360px;
+      max-width: 560px;
     }
   }
 
@@ -674,6 +913,7 @@ footer {
     img {
       width: 300px;
     }
+
     .paragraph {
       p {
         max-width: 800px;
@@ -703,6 +943,7 @@ footer {
   }
 
   .countries {
+    max-width: 100%;
     .nationality {
       img {
         width: 300px;
@@ -728,6 +969,17 @@ footer {
     margin: 80px 20px;
   }
 
+  #schedule {
+    img {
+      max-width: 28rem;
+      margin: 20px 0;
+    }
+  }
+
+  .harga {
+    margin: 20px;
+  }
+
   footer {
     .row1 {
       flex-direction: column;
@@ -739,6 +991,30 @@ footer {
       padding: 20px 30px;
       img {
         width: 300px;
+      }
+    }
+  }
+
+  .registration {
+    margin-top: 40px;
+    .container {
+      margin: 20px;
+      height: 100%;
+      flex-direction: column;
+      form {
+        button {
+          width: 100%;
+        }
+      }
+    }
+    .inputRegistration {
+      flex-direction: column;
+      margin-top: 30px;
+      .section1,
+      .section2 {
+        input {
+          max-width: 240px !important;
+        }
       }
     }
   }

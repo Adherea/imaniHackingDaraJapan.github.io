@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="x-icon" href="images/assets2/rogin.png" />
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      overflow-y: hidden !important;
+
+      padding: 0;
+    }
+    body {
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      background-image: linear-gradient(to right, #73b6e3, #8257fe);
+    }
+  </style>
+  <body>
+    <section class="registration">
+      <div class="container">
+        <div class="titile">
+          <h1>Registration</h1>
+          <span></span>
+        </div>
+        <form action="" id="theForm">
+          <div class="inputRegistration">
+            <div class="section1">
+              <label for="">First name</label>
+              <input type="text" required placeholder="Enter Your first name" />
+              <label for="">Email</label>
+              <input type="text" required placeholder="Enter Your Email" />
+              <!-- <label for="">Nationality</label>
+              <input type="text" required placeholder="Enter Your Email" /> -->
+            </div>
+            <div class="section2">
+              <label for="">Last name</label>
+              <input type="text" placeholder="Last name" />
+              <label for="">Phone number</label>
+              <input type="text" placeholder="Enter your number" />
+              <!-- <label for="">Nationality</label>
+              <input type="text" placeholder="Enter your Nationality" /> -->
+            </div>
+          </div>
+          <div>
+            <button type="submit" id="register">Register</button>
+            <button style="margin-top: 20px; background-color: #8257fe"><a style="color: #fff" href="index.html">Back to home</a></button>
+          </div>
+
+          <div class="terms">
+            <p>By registering, you agree to the terms and conditions of Imani Hacking.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

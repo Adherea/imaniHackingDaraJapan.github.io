@@ -5,6 +5,8 @@ const registrasi = document.querySelector("#registrasi");
 const openPopupButton = document.getElementById("openPopup");
 const closePopupButton = document.getElementById("closePopup");
 const popup = document.getElementById("myPopup");
+const register = document.querySelector("#register");
+let theform = document.querySelector("#theform");
 
 menu.addEventListener("click", () => {
   nav.classList.toggle("slide");
@@ -29,3 +31,23 @@ document.addEventListener("click", (e) => {
   }
 });
 
+function sendMail() {
+  let params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+  const serviceID = "service_h4ubllu";
+  const templateID = "template_byb3f8t";
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      console.log(res);
+      alert("your message sent successfully");
+    })
+    .catch((err) => console.log(err));
+}

@@ -64,10 +64,13 @@ nav .logo a {
   font-size: 28px;
   font-weight: bolder;
 }
-nav .contact {
-  background-color: #ffcc31;
-  border-radius: 10px;
-  transition: 0.3s linear;
+nav .contact button {
+  background-color: transparent;
+  color: #407bff;
+  border: 2px solid #407bff;
+  border-radius: 16px;
+}
+nav .contact button:hover {
   border: 2px solid #fff;
 }
 nav .popup {
@@ -83,6 +86,11 @@ nav .popup {
   height: 70vh;
   padding: 50px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+nav .popup form input,
+nav .popup form textarea {
+  border-radius: 11px;
+  border: 2px solid rgb(209, 209, 209);
 }
 nav .popup h2 {
   text-align: center;
@@ -103,6 +111,9 @@ nav .popup button[type=submit] {
   background-color: #007bff;
   color: #fff;
   border: none;
+  width: 300px;
+  border-radius: 11px;
+  margin: 0 auto;
   padding: 10px 20px;
   cursor: pointer;
 }
@@ -173,10 +184,15 @@ nav .btn-close {
 .hero {
   display: flex;
   flex-direction: row-reverse;
+  background-size: cover;
   align-items: center;
   justify-content: space-around;
   background-color: #add8e6;
-  padding: 3.4rem 2.4rem;
+  padding-top: 70px;
+  padding-bottom: 0;
+}
+.hero img {
+  max-width: 30vw;
 }
 .hero h1 {
   font-size: 2.2rem;
@@ -237,7 +253,7 @@ nav .btn-close {
 }
 .about .visionMission {
   display: flex;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   flex-direction: row-reverse;
   gap: 70px;
@@ -249,13 +265,19 @@ nav .btn-close {
 .about .mission {
   flex-direction: column;
 }
+.about .visi h1,
+.about .mission h1 {
+  font-size: 28px;
+  font-weight: bolder;
+}
+.about .visi p,
+.about .mission p {
+  font-size: 30px;
+}
 .about .visi {
   margin: 70px 0;
 }
 
-.konten {
-  margin-top: 120px;
-}
 .konten #awd {
   background-color: #0e9ac5;
 }
@@ -264,6 +286,10 @@ nav .btn-close {
   background-color: #add8e6;
   margin-top: 160px;
   padding: 100px 0;
+  color: #000080;
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 .countries img {
   width: 57vw;
@@ -332,8 +358,6 @@ nav .btn-close {
 }
 
 .facility {
-  max-width: 900px;
-  margin: 0 auto;
   margin-top: 130px;
   padding-top: 100px;
   display: flex;
@@ -357,6 +381,7 @@ nav .btn-close {
 
 #service {
   padding-top: 120px;
+  margin: 50px 0;
 }
 
 .swiper {
@@ -414,6 +439,89 @@ nav .btn-close {
 }
 .support img {
   width: 300px;
+}
+
+.starting {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.harga {
+  margin: 140px auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: none !important;
+  box-shadow: 20px 0px 50px 0px rgb(240, 240, 240);
+}
+.harga .title {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.harga hr {
+  color: #c7c7c7 !important;
+}
+.harga #note {
+  margin-top: 70px;
+}
+.harga #benefit {
+  max-width: 500px;
+  line-height: 10px;
+}
+.harga .lower {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.harga .lower a {
+  border-radius: 10px;
+  padding: 7px 20px;
+  color: #fff7f7;
+  border: 2px solid #407bff;
+  background-color: #407bff;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.harga .lower a:hover {
+  border: 2px solid #fff;
+  background-color: #6e99f7;
+  color: #fff;
+}
+.harga .lower i > p {
+  color: black !important;
+}
+
+.harga:hover {
+  cursor: default;
+}
+
+#news {
+  padding-top: 40px;
+}
+#news .swiper .swiper-wrapper .swiper-slide {
+  padding: 50px 20px;
+}
+#news img {
+  width: auto;
+  border-radius: 0;
+}
+#news h1 {
+  margin: 32px 0;
+}
+#news .border {
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 40px 20px;
+  transition: 0.3s linear;
+}
+#news .border:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #f8f8f8;
+  box-shadow: 20px 10px 110px 10px #dbdbdb;
 }
 
 footer {
@@ -477,6 +585,78 @@ footer .address a {
   color: #fff;
 }
 
+#schedule img {
+  max-width: 850px;
+  margin: 20px 0;
+  margin-left: -100px;
+}
+
+.registration {
+  max-width: 800px;
+  margin: 90px auto;
+}
+.registration .container {
+  background-color: #fff;
+  height: 60vh;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 20px 10px 110px 10px #73b6e3;
+}
+.registration .container h1 {
+  text-align: center;
+  width: 170px;
+  margin: 0 auto;
+  border-bottom: 2px solid #73b6e3;
+}
+.registration .container .inputRegistration {
+  display: flex;
+  justify-content: space-around;
+}
+.registration .container .inputRegistration .section1,
+.registration .container .inputRegistration .section2 {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+}
+.registration .container .inputRegistration .section1 input,
+.registration .container .inputRegistration .section2 input {
+  margin: 7px 0;
+  border: 2px solid rgb(231, 231, 231);
+}
+.registration .container .inputRegistration label {
+  font-size: 17px;
+  font-weight: bolder;
+  margin: 7px 0;
+}
+.registration .container .inputRegistration .section1 input {
+  width: 280px;
+}
+.registration .container .inputRegistration .section2 input {
+  width: 280px;
+}
+.registration .container .inputRegistration input {
+  padding: 9px 12px;
+  font-size: 15px;
+}
+.registration button {
+  background-color: #0097db;
+  border: none;
+  padding: 9px 20px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bolder;
+  width: 760px;
+  font-size: 21px;
+  margin-top: 80px;
+}
+.registration button:hover {
+  cursor: pointer;
+}
+.registration .terms {
+  margin-top: 40px;
+  text-align: center;
+}
+
 /*
 =============================================================================================================================================================================================================================================================================================================
 
@@ -516,9 +696,31 @@ footer .address a {
     margin: 50px 0;
     border-radius: 50%;
   }
+  #schedule img {
+    max-width: 45rem;
+    margin: 20px 0;
+  }
   footer {
     flex-direction: column;
     align-items: start;
+  }
+  .registration {
+    margin-top: 40px;
+  }
+  .registration .container {
+    margin: 20px;
+    height: 100%;
+    flex-direction: column;
+  }
+  .registration .container form button {
+    width: 100%;
+  }
+  .registration .inputRegistration {
+    margin-top: 30px;
+  }
+  .registration .inputRegistration .section1 input,
+  .registration .inputRegistration .section2 input {
+    max-width: 240px !important;
   }
 }
 @media screen and (max-width: 1366px), (max-width: 600px), (max-width: 912px) {
@@ -579,15 +781,16 @@ footer .address a {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 50px 20px;
     background-color: #add8e6;
   }
-  .hero p {
-    margin: 20px 0;
+  .hero p,
+  .hero h1 {
+    margin: 32px 0;
   }
   .hero img {
     padding-top: 60px;
-    max-width: 360px;
+    max-width: 560px;
   }
   .about {
     margin-top: 40px;
@@ -625,6 +828,9 @@ footer .address a {
   #service p {
     margin-top: -25px;
   }
+  .countries {
+    max-width: 100%;
+  }
   .countries .nationality img {
     width: 300px;
     height: 20vh;
@@ -643,6 +849,13 @@ footer .address a {
   .price {
     margin: 80px 20px;
   }
+  #schedule img {
+    max-width: 28rem;
+    margin: 20px 0;
+  }
+  .harga {
+    margin: 20px;
+  }
   footer .row1 {
     flex-direction: column;
     align-items: start;
@@ -654,5 +867,24 @@ footer .address a {
   }
   footer .row2 img {
     width: 300px;
+  }
+  .registration {
+    margin-top: 40px;
+  }
+  .registration .container {
+    margin: 20px;
+    height: 100%;
+    flex-direction: column;
+  }
+  .registration .container form button {
+    width: 100%;
+  }
+  .registration .inputRegistration {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .registration .inputRegistration .section1 input,
+  .registration .inputRegistration .section2 input {
+    max-width: 240px !important;
   }
 }/*# sourceMappingURL=style.css.map */
