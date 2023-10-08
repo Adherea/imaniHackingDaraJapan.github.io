@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none !important;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Serif JP", "Poppins", serif;
 }
 body {
   overflow-x: hidden;
@@ -24,7 +24,9 @@ nav {
     font-size: 0.8rem;
     padding-top: 10px;
     width: 40%;
-    background-color: #add8e6;
+    .mentorship {
+      display: none;
+    }
     li {
       a {
         color: #0e9ac5;
@@ -138,6 +140,19 @@ nav {
     top: 10px;
     right: 10px;
   }
+
+  #languageDropdownMobilenya {
+    display: none;
+  }
+  .forDesktop {
+    background-color: transparent;
+    padding: 3px 10px;
+    color: #000080;
+    border: 1px solid #000080;
+  }
+  .forDesktop:hover {
+    cursor: pointer;
+  }
 }
 
 .menu-toggle {
@@ -203,11 +218,10 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #add8e6;
-  // padding: 3.4rem 2.4rem;
   padding-top: 70px;
   padding-bottom: 0;
   img {
-    max-width: 30vw;
+    max-width: 600px;
   }
 
   h1 {
@@ -305,6 +319,7 @@ nav {
 
 // KONTEN SECTION START
 .konten {
+  margin: 190px 0;
   #awd {
     background-color: #0e9ac5;
   }
@@ -346,6 +361,10 @@ nav {
   .world-map {
     width: 500px;
     height: 500px;
+  }
+
+  #background-paragraph {
+    padding: 0 210px;
   }
 }
 
@@ -483,57 +502,62 @@ nav {
   margin: 0 auto;
   margin-top: 200px;
   text-align: center;
-  // background-image: url("/images/assets2/pattern-circles.png");
 }
 
 // PRICE START
-.harga {
-  margin: 140px auto;
-  padding: 20px;
-  border-radius: 20px;
-  border: none !important;
-  box-shadow: 20px 0px 50px 0px rgb(240, 240, 240);
-  .title {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-around;
-  }
-  hr {
-    color: #c7c7c7 !important;
-  }
+// .harga {
+//   margin: 140px auto;
+//   padding: 20px;
+//   border-radius: 20px;
+//   border: none !important;
+//   box-shadow: 20px 0px 50px 0px rgb(240, 240, 240);
+//   .title {
+//     padding-top: 20px;
+//     display: flex;
+//     justify-content: space-around;
+//   }
+//   hr {
+//     color: #c7c7c7 !important;
+//   }
 
-  #note {
-    margin-top: 70px;
-  }
-  #benefit {
-    max-width: 500px;
-    line-height: 10px;
-  }
-  .lower {
-    a {
-      border-radius: 10px;
-      padding: 7px 20px;
-      color: #fff7f7;
-      border: 2px solid #407bff;
-      background-color: #407bff;
-      font-weight: bold;
-      border-radius: 20px;
-    }
-    a:hover {
-      border: 2px solid #fff;
-      background-color: #6e99f7;
-      color: #fff;
-    }
-    i > p {
-      color: black !important;
-    }
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
-.harga:hover {
-  cursor: default;
+//   #note {
+//     margin-top: 70px;
+//   }
+//   #benefit {
+//     max-width: 500px;
+//     line-height: 10px;
+//   }
+//   .lower {
+//     a {
+//       border-radius: 10px;
+//       padding: 7px 20px;
+//       color: #fff7f7;
+//       border: 2px solid #407bff;
+//       background-color: #407bff;
+//       font-weight: bold;
+//       border-radius: 20px;
+//     }
+//     a:hover {
+//       border: 2px solid #fff;
+//       background-color: #6e99f7;
+//       color: #fff;
+//     }
+//     i > p {
+//       color: black !important;
+//     }
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//   }
+// }
+// .harga:hover {
+//   cursor: default;
+// }
+
+.price {
+  max-width: 300px;
+  margin: 0 auto;
+  gap: 10px;
 }
 // PRICE END
 
@@ -581,13 +605,11 @@ footer {
 
   .row1 {
     display: flex;
-    align-items: first baseline;
-    justify-content: space-around;
+    justify-content: space-evenly;
     .sub {
       display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: space-around;
+      align-items: center;
+      // max-width: 950px;
       i {
         font-size: 17px;
       }
@@ -604,19 +626,6 @@ footer {
     }
   }
 
-  .row2 {
-    background-color: #6288b6;
-
-    color: #fff;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-      width: 300px;
-    }
-  }
   div {
     h3 {
       margin: 50px 0;
@@ -671,6 +680,7 @@ footer {
 
     .inputRegistration {
       display: flex;
+      margin-top: 20px;
       justify-content: space-around;
       .section1,
       .section2 {
@@ -705,18 +715,22 @@ footer {
     }
   }
 
-  button {
+  a {
     background-color: #0097db;
     border: none;
     padding: 9px 20px;
     color: #fff;
     border-radius: 5px;
     font-weight: bolder;
-    width: 760px;
+    max-width: 740px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    // margin-left: 8vw;
     font-size: 21px;
-    margin-top: 80px;
+    margin-top: 30px;
   }
-  button:hover {
+  a:hover {
     cursor: pointer;
   }
 
@@ -730,7 +744,7 @@ footer {
 =============================================================================================================================================================================================================================================================================================================
 
 */
-@media screen and (max-width: 768px), (max-width: 820px) {
+@media screen and (max-width: 768px), (max-width: 820px), (max-width: 1027px) {
   nav {
     justify-content: space-around;
 
@@ -784,6 +798,14 @@ footer {
   footer {
     flex-direction: column;
     align-items: start;
+    .row1 {
+      flex-direction: column;
+      .sub {
+        margin-top: 30px;
+        align-items: start;
+        flex-direction: column;
+      }
+    }
   }
   .registration {
     margin-top: 40px;
@@ -798,7 +820,6 @@ footer {
       }
     }
     .inputRegistration {
-      // flex-direction: column;
       margin-top: 30px;
       .section1,
       .section2 {
@@ -859,6 +880,12 @@ footer {
       transition: 0.4s linear;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 20px;
+      .dropdown {
+        display: none;
+      }
+      .mentorship {
+        display: block;
+      }
       li {
         display: flex;
 
@@ -875,13 +902,26 @@ footer {
     .contact {
       display: none;
     }
+
+    .forDesktop {
+      display: none;
+    }
+    #languageDropdownMobilenya {
+      display: block;
+      background-color: transparent;
+      padding: 3px 10px;
+      color: #000080;
+      border: 1px solid #000080;
+    }
+    #languageDropDownMobilenya:hover {
+      cursor: pointer;
+    }
   }
 
   .hero {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    // margin-top: -140px;
     padding: 50px 20px;
     background-color: #add8e6;
     p,
@@ -984,6 +1024,9 @@ footer {
     .row1 {
       flex-direction: column;
       align-items: start;
+      .sub {
+        flex-direction: column;
+      }
     }
     .row2 {
       flex-direction: column;

@@ -8,6 +8,9 @@ const popup = document.getElementById("myPopup");
 const register = document.querySelector("#register");
 let theform = document.querySelector("#theform");
 
+let eigo = document.querySelector(".eigo");
+let nihon = document.querySelector(".nihon");
+
 menu.addEventListener("click", () => {
   nav.classList.toggle("slide");
   nav.style.boxShadow = "10px 10px 101px 10px #adcce6";
@@ -51,3 +54,12 @@ function sendMail() {
     })
     .catch((err) => console.log(err));
 }
+
+document.getElementById("languageDropdown").addEventListener("change", function () {
+  const selectedLanguage = this.value;
+  if (selectedLanguage === "english") {
+    window.location.href = "../index.html";
+  } else if (selectedLanguage === "japanese") {
+    window.location.href = "../日本語/index.html";
+  }
+});

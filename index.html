@@ -26,6 +26,7 @@
         <li><a href="#countries">Countries</a></li>
         <li><a href="#service">Service</a></li>
         <li><a href="#news">News</a></li>
+        <li class="mentorship"><a href="#mentors">Mentors</a></li>
         <li class="dropdown">
           <a href="#mentors">Members</a>
           <ul class="dropdown-content">
@@ -34,6 +35,10 @@
           </ul>
         </li>
       </ul>
+      <select id="languageDropdownMobilenya">
+        <option class="eigo" value="english">English</option>
+        <option class="nihon" value="japanese">Japanese</option>
+      </select>
 
       <div class="menu-toggle">
         <input type="checkbox" />
@@ -44,7 +49,6 @@
 
       <div class="contact" id="registrasi">
         <button class="btn fw-bolder" id="openPopup">Contact us! <i class="fa-regular fa-paper-plane"></i></button>
-        <!-- <a href="https://bit.ly/bootcampdaraxcf" target="_blank" class="btn" id="openPopup">Contact us! <i class="fa-regular fa-paper-plane"></i></a> -->
       </div>
 
       <div class="popup" id="myPopup">
@@ -64,6 +68,11 @@
 
         <button class="btn-close" id="closePopup"></button>
       </div>
+
+      <select class="forDesktop" id="languageDropdown">
+        <option class="eigo" value="english">English</option>
+        <option class="nihon" value="japanese">Japanese</option>
+      </select>
     </nav>
 
     <!-- NAVBAR END -->
@@ -82,14 +91,6 @@
     </section>
 
     <!-- HERO END -->
-
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#add8e6"
-        fill-opacity="1"
-        d="M0,128L48,149.3C96,171,192,213,288,213.3C384,213,480,171,576,138.7C672,107,768,85,864,69.3C960,53,1056,43,1152,48C1248,53,1344,75,1392,85.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-      ></path>
-    </svg> -->
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="padding-top: 25px">
       <path
@@ -227,7 +228,7 @@
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Dr Kelechukwu N. Onwukamike</h1>
-                  <p>
+                  <p style="padding: 0 20px">
                     Holding double PhDs in Organic and Polymer Chemistry from KIT Germany and University of Bordeaux France, my research concentrated on sustainable cellulose-based materials. Currently, employed as a Research Scientist at
                     Procter & Gamble Germany.
                   </p>
@@ -240,7 +241,7 @@
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Daniel Joseph Makyao</h1>
-                  <p>
+                  <p style="padding: 0 20px">
                     Experienced software developer proficient in Python, Django, PostgreSQL, and MERN stack (MongoDB, Express, React, Node.js). Committed to learning and staying updated with the latest tech. Brings diligence and precision
                     to every project, from enhancing existing features to building new products.
                   </p>
@@ -253,7 +254,7 @@
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Nuha nuru</h1>
-                  <p>
+                  <p style="padding: 0 20px">
                     Nuha Nuru is an experienced professional in Python, Pandas, C, and Robotic Process Automation (RPA) using the UiPath platform. He is a dedicated individual with a daily commitment to exploring and discovering new
                     technologies, showcasing his unwavering passion for innovation.
                   </p>
@@ -270,7 +271,9 @@
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Saki Yanagihara</h1>
-                  <p>International education enthusiast with a multicultural background, currently pursuing a Master's degree in Education in Japan. Passionate about fostering cultural understanding and academic growth.</p>
+                  <p style="padding: 0 20px">
+                    International education enthusiast with a multicultural background, currently pursuing a Master's degree in Education in Japan. Passionate about fostering cultural understanding and academic growth.
+                  </p>
                   <a href="https://www.facebook.com/profile.php?id=100008867921448" target="_blank">Visit Me</a>
                 </div>
               </div>
@@ -280,7 +283,7 @@
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Naho Chujo</h1>
-                  <p>
+                  <p style="padding: 0 20px">
                     Former International NPO social worker in Kenya and Representative Director of Greendy Association. Experienced in community management at career education. GCI data science summer school 2020 alumnus. Currently working
                     at a data science startup.
                   </p>
@@ -293,7 +296,7 @@
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Gerry Sabar</h1>
-                  <p>
+                  <p style="padding: 0 20px">
                     Over 8 years of hands-on experience in software development and testing, including analysis, data modeling, design, project delivery, and collaboration with various organizational levels, from leads to management and
                     business units.
                   </p>
@@ -310,7 +313,7 @@
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Douglas Fortunatus</h1>
-                  <p>
+                  <p style="padding: 0 20px">
                     Guiding engineers to execute development projects, from E-commerce websites to APIs. Collaborating on Node-API development, supporting student learning, and building tech-focused teams proficient in React, HTML, CSS,
                     PHP, Laravel, Vue.js, Python, and JavaScript.
                   </p>
@@ -370,38 +373,38 @@
 
     <!-- PRICE LIST SECTION START -->
     <div class="starting fs-3 p-4" style="margin-bottom: -120px"></div>
-    <div class="card harga" style="max-width: 600px">
-      <div class="text-center">
-        <h3>Everything happens for a reasons</h3>
-        <p class="fs-5" style="color: #c5c5c5">Sign-up our 30-day trial. No credit card required</p>
-      </div>
-      <div class="title">
-        <!-- <h3>100K PAGEVIEWS</h3> -->
-        <!-- <h1><span class="fw-bolder">$64,54</span><span class="fs-3">/3 times payments</span></h1> -->
-      </div>
-      <div class="card-body text-center m-lg-5 main">
-        <div>
-          <h5 class="card-title">Full course Price</h5>
 
-          <p class="card-text fw-bolder" style="font-size: 80px"><i class="fa-solid fa-dollar-sign"></i> 187,18</p>
+    <section class="container text-center price">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Tanzania price</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">See more detail</a>
+            </div>
+          </div>
         </div>
-        <div id="note">
-          <p>
-            <span class="fw-bolder fs-6">*noted:</span> Payment can be made in three segments. After completing the first class, a payment of $58,09 is due, followed by a payment of $64,54 after the 5th class, and another $64,54 after the
-            10th class.
-          </p>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Indonesia price</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">See more detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Philipines price</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">See more detail</a>
+            </div>
+          </div>
         </div>
       </div>
-      <hr />
-      <div class="lower">
-        <div id="benefit">
-          <p class="card-title"><i class="fa-solid fa-check" style="color: #407bff"> </i> Hireable skills</p>
-          <p class="card-text"><i class="fa-solid fa-check" style="color: #407bff"> </i> Weekly mentoring session</p>
-          <p class="card-text"><i class="fa-solid fa-check" style="color: #407bff"> </i> Zoom/Google meet live lecture</p>
-        </div>
-        <a href="#" class="btn">Start my trial</a>
-      </div>
-    </div>
+    </section>
     <!-- PRICE LIST SECTION END -->
 
     <!-- NEWS SECTION START -->
@@ -477,28 +480,28 @@
     <footer>
       <div class="row1">
         <div class="part1">
-          <!-- <h1 class="fw-semibold">Darajapan</h1> -->
-          <!-- <img src="images/assets2/cancel.png" alt="" /> -->
           <h1 class="fw-semibold fs-2">CODING FIRST | DARAJAPAN</h1>
-          <!-- <h1 class="fw-semibold">Coding first</h1> -->
-          <p style="width: 350px; text-align: start">Empower individuals with cutting-edge tech skills, transcending borders, and shaping future tech innovators. Join us on this transformative journey to become a global tech leader.</p>
+          <p style="max-width: 350px; text-align: start">Empower individuals with cutting-edge tech skills, transcending borders, and shaping future tech innovators. Join us on this transformative journey to become a global tech leader.</p>
         </div>
         <div class="sub">
-          <h3 class="fs-5">Quick Links</h3>
-          <a href="#about">About</a>
-          <a href="#countries">Countries</a>
-          <a href="#services">Service</a>
-          <a href="#mentors">Mentors</a>
-        </div>
-        <div class="address">
-          <h3 class="fs-5">Visit</h3>
-          <a href="https://goo.gl/maps/DYf2Rd1btyreC18M9">91 Kanda Sakumagashi, Chiyoda City, Tokyo 101-0026, Japan</a>
-        </div>
-        <div class="sub">
-          <h3 class="fs-5">Find us on</h3>
-          <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/darajapan/"> Instagram</a></i>
-          <p><i class="fa-regular fa-envelope"></i> info@darajapan.com</p>
-          <i class="fa-solid fa-phone"> <a href="https://www.darajapan.net/dara/">+81 90-4703-6610 </a></i>
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.1849850715644!2d139.7797256!3d35.6970652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188eae92fff387%3A0xa1900cfa37624b5a!2sQus%20Akihabara%20Bld.%2C%2091%20Kanda%20Sakumagashi%2C%20Chiyoda%20City%2C%20Tokyo%20101-0026%2C%20Jepang!5e0!3m2!1sid!2sid!4v1696688452947!5m2!1sid!2sid"
+              width="340"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div>
+            <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/darajapan/"> Instagram</a></i>
+            <p><i class="fa-regular fa-envelope"></i> info@darajapan.com</p>
+
+            <i class="fa-brands fa-whatsapp"><a href="https://www.darajapan.net/dara/"> +62 877 6967 8988 </a></i>
+            <a href="https://goo.gl/maps/DYf2Rd1btyreC18M9">91 Kanda Sakumagashi, Chiyoda City, Tokyo 101-0026, Japan</a>
+          </div>
         </div>
       </div>
 
