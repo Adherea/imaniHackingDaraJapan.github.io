@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,9 @@ nav ul {
   font-size: 0.8rem;
   padding-top: 10px;
   width: 40%;
+}
+nav ul .mobileServices {
+  display: none;
 }
 nav ul .mentorship {
   display: none;
@@ -136,10 +140,13 @@ nav .forDesktop {
   background-color: transparent;
   padding: 3px 10px;
   color: #000080;
+  border-radius: 10px;
   border: 1px solid #000080;
 }
 nav .forDesktop:hover {
   cursor: pointer;
+  color: #535353;
+  border: 1px solid #fff;
 }
 
 .menu-toggle {
@@ -156,7 +163,7 @@ nav .forDesktop:hover {
   left: -8px;
   top: -3px;
   opacity: 0;
-  z-index: 2;
+  z-index: 99;
 }
 .menu-toggle input:hover {
   cursor: pointer;
@@ -190,6 +197,7 @@ nav .forDesktop:hover {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  transition: 0.3s linear;
 }
 .dropdown:hover .dropdown-content a:hover {
   color: black;
@@ -423,8 +431,11 @@ nav .forDesktop:hover {
   margin-bottom: 100px;
   background-color: #fff;
   margin-top: -30px;
-  padding: 40px 0;
+  padding: 40px 5px;
   border-radius: 40px 40px 30px 30px;
+}
+.swiper #background-paragraph .special {
+  font-weight: bolder;
 }
 .swiper a {
   background-color: #58bbff;
@@ -437,28 +448,6 @@ nav .forDesktop:hover {
 .swiper a:hover {
   border: 2px solid #fafafa;
   background-color: #81c8f7;
-}
-
-.support {
-  background-color: #add8e6;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-.support .row2 {
-  display: flex;
-  background-color: #add8e6;
-  align-items: start;
-  justify-content: space-around;
-}
-.support .row2 .gajah {
-  width: 170px;
-}
-.support .row2 .japan {
-  width: 450px;
-}
-.support img {
-  width: 300px;
 }
 
 .starting {
@@ -499,6 +488,28 @@ nav .forDesktop:hover {
   transform: scale(1.1);
   background-color: #f8f8f8;
   box-shadow: 20px 10px 110px 10px #dbdbdb;
+}
+
+.support {
+  background-color: #add8e6;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.support .row2 {
+  display: flex;
+  background-color: #add8e6;
+  align-items: start;
+  justify-content: space-around;
+}
+.support .row2 .gajah {
+  width: 170px;
+}
+.support .row2 .japan {
+  width: 450px;
+}
+.support img {
+  width: 300px;
 }
 
 footer {
@@ -624,6 +635,81 @@ footer .address a {
   text-align: center;
 }
 
+.punchlines {
+  margin-top: -100px;
+}
+.punchlines h1 {
+  text-align: center;
+}
+.punchlines .hero,
+.punchlines .paragraph {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.forCompanies {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.forCompanies p {
+  max-width: 540px;
+  margin: 0 auto;
+}
+.forCompanies .select {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.forCompanies .select #option {
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: 2px solid #c9c9c9;
+}
+.forCompanies .erabu {
+  margin: 10px 0;
+}
+.forCompanies #display-content {
+  margin: 0 auto;
+}
+.forCompanies #display-content .course1,
+.forCompanies #display-content .course2 {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 40px;
+}
+.forCompanies #display-content .title {
+  margin: 40px 0;
+  text-align: center;
+}
+.forCompanies #display-content .buttonAction {
+  width: 300px;
+  margin: 20px auto;
+}
+.forCompanies #display-content .buttonAction button {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  transition: 0.3s linear;
+}
+.forCompanies #display-content .buttonAction button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.forCompanies #display-content .buttonAction .web {
+  background-color: #0097db;
+}
+.forCompanies #display-content .buttonAction .mobile {
+  background-color: #ffc100;
+}
+.forCompanies #display-content .授業 h3 {
+  font-size: 20px;
+  line-height: 50px;
+}
+
 /*
 =============================================================================================================================================================================================================================================================================================================
 
@@ -740,6 +826,9 @@ footer .address a {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 20px;
   }
+  nav ul .mobileServices {
+    display: block;
+  }
   nav ul .dropdown {
     display: none;
   }
@@ -766,10 +855,8 @@ footer .address a {
     background-color: transparent;
     padding: 3px 10px;
     color: #000080;
+    border-radius: 10px;
     border: 1px solid #000080;
-  }
-  nav #languageDropDownMobilenya:hover {
-    cursor: pointer;
   }
   .hero {
     flex-direction: column;

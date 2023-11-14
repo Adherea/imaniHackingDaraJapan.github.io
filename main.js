@@ -11,6 +11,11 @@ let theform = document.querySelector("#theform");
 let eigo = document.querySelector(".eigo");
 let nihon = document.querySelector(".nihon");
 
+let option = document.getElementById("option");
+let displayContent = document.querySelector("#display-content");
+let course1 = document.querySelector(".course1");
+let course2 = document.querySelector(".course2");
+
 menu.addEventListener("click", () => {
   nav.classList.toggle("slide");
   nav.style.boxShadow = "10px 10px 101px 10px #adcce6";
@@ -63,3 +68,6 @@ document.getElementById("languageDropdown").addEventListener("change", function 
     window.location.href = "../日本語/index.html";
   }
 });
+
+
+

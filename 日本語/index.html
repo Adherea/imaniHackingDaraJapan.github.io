@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet" />
-    <title>イマニ アカデミー| ダラジャパン</title>
+    <title>イマニ・アカデミー| ダラジャパン</title>
     <link rel="shortcut icon" type="x-icon" href="images/vectors/title/coding.png" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -26,7 +26,12 @@
       <ul>
         <li><a href="#about">情報</a></li>
         <li><a href="#countries">国々</a></li>
-        <li><a href="#service">サービス</a></li>
+        <li class="dropdown">
+          <a href="#service">サービス</a>
+          <ul class="dropdown-content">
+            <li><a href="ForCompanies.html" style="font-size: 13px">会社のコース</a></li>
+          </ul>
+        </li>
         <li><a href="#news">ニュース</a></li>
         <li class="dropdown">
           <a href="#mentors">メンバー</a>
@@ -89,7 +94,7 @@
       <div class="caption animate__animated animate__fadeInUp">
         <h1 class="fw-semibold">国境を超えたグローバルなテックリーダーを育ております。</h1>
         <p>一緒に国際的なITエンジニアになりましょう！このプログラムは色んなITエンジニアリングスキルを学びたいあなたに、一緒に国際的なITエンジニアやITリーダーになりましょう！</p>
-        <a href="register.html" target="_blank" class="btn">今参加する！ <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        <a href="register.html" class="btn">今参加する！ <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
       </div>
     </section>
 
@@ -129,7 +134,7 @@
           <h1>なぜ ”Imani Hacking “?</h1>
 
           <p>
-            イマニハッキングはゼロ知識から中級スキルレベルまで学んでおります。このITブートキャンプはやりたいIT仕事学生達に手伝っております。また、このブートキャンプには初心者もプロ向けております。オンラインでやっていますので興味がありますでしょうか？お待ちしております！
+            イマニ・ハッキングはゼロ知識から中級スキルレベルまで学んでおります。このITブートキャンプはやりたいIT仕事学生達に手伝っております。また、このブートキャンプには初心者もプロ向けております。オンラインでやっていますので興味がありますでしょうか？お待ちしております！
           </p>
           <a href="about.html" class="btn">もっと読む <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i></a>
         </div>
@@ -222,11 +227,11 @@
 
     <!-- MENTORS SECTION START -->
     <section class="container text-center mentor" id="mentors" data-aos="fade-up">
-      <h1 class="fw-semibold" style="border-bottom: 3px solid #0e9ac5; max-width: 240px; margin: 40px auto">メンター</h1>
       <div class="swiper">
         <div class="swiper-wrapper">
           <!-- |SLIDE |-->
           <div class="swiper-slide">
+            <h1>講師</h1>
             <div class="row">
               <div class="col-lg-4">
                 <div id="background">
@@ -234,7 +239,11 @@
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Dr Kelechukwu N. Onwukamike</h1>
-                  <p>KITドイツとボルドー大学フランスから有機化学と高分子化学の二重博士号を取得し、私の研究は持続可能なセルロースベースの材料に焦点を当てています。現在、私はProcter & Gambleドイツで研究科学者として勤務しています。</p>
+                  <p><span class="special">Specialization:</span> Researcher of Chemistry, Coarching</p>
+                  <p style="padding: 0 20px; margin-top: 30px">
+                    KITドイツとボルドー大学フランスから有機化学と高分子化学の二重博士号を取得し、私の研究は持続可能なセルロースベースの材料に焦点を当てています。現在、私はProcter & Gambleドイツで研究科学者として勤務しています。
+                  </p>
+                  <br />
                   <a href="https://www.linkedin.com/in/kelechukwu-onwukamike-phd/" target="_blank">プロファイルを見る</a>
                 </div>
               </div>
@@ -244,11 +253,31 @@
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Daniel Joseph Makyao</h1>
-                  <p>
-                    PhytonやDjangoやPostreSQLやMERN stack (MongoDB, Express, React,
-                    Node.js)の経験豊富なエンジニア。最新のテクノロジーを学び続け、最新情報を把握しています。既存の機能の強化から新しい製品の構築まで、すべてのプロジェクトに勤勉さと精度をもたらします
+                  <br />
+                  <p><span class="special">Specialization:</span> Software Engineer</p>
+                  <br />
+                  <p style="padding: 0 20px">
+                    Phyton、Django、PostreSQL、MERN stack (MongoDB, Express, React,
+                    Node.js)の経験豊富なエンジニア。最新のテクノロジーを学び続け、最新情報を把握しています。既存の機能の強化から新しい製品の構築まで、すべてのプロジェクトに勤勉さと精度をもたらします。
                   </p>
+                  <br />
                   <a href="https://www.linkedin.com/in/daniel-makyao-6ab072223/" target="_blank">プロファイルを見る</a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div id="background">
+                  <img src="../images/Emmanuel Tarimo.jpg" alt="" />
+                </div>
+                <div id="background-paragraph">
+                  <h1 class="fs-3">Emmanuel Tarimo</h1>
+                  <br />
+                  <p><span class="special">Specialization:</span> Data Scientist, Web Dev, Designer</p>
+                  <!-- <br /> -->
+                  <p style="padding: 0 20px">
+                    データサイエンティストおよびアナリストとして、複雑なデータの収集、クリーニング、解析、予測モデルの作成、実用的な洞察の提供に優れています。パターンを発見し、データレポートを生成します。さらに、Pythonフレームワークを使用して、動的かつ安全なウェブサイトを構築する熟練したウェブ開発者でもあります。
+                  </p>
+                  <!-- <br /> -->
+                  <a href="https://emmanueltarimo.me/" target="_blank">プロファイルを見る</a>
                 </div>
               </div>
               <div class="col-lg-4">
@@ -256,17 +285,35 @@
                   <img src="images/support/nuru.jpg" alt="" />
                 </div>
                 <div id="background-paragraph">
-                  <h1 class="fs-3">Nuha nuru</h1>
-                  <p>
+                  <h1 class="fs-3">Nuha nuru Ayubi</h1>
+                  <p><span class="special">Specialization:</span> Automation Developer, Data Analyst</p>
+                  <p style="padding: 0 20px">
                     Nuha NuruはPythonやPandasやC言語やRPA(Robotic Process Automation)としてUiPath プラットフォームを使用するの経験豊富なエンジニアです。Nuha Nuru
                     は、新しいテクノロジーを探求し、発見し続ける日々のコミットメントを持つ、イノベーションへの情熱を示す個人です。
                   </p>
+                  <br />
                   <a href="https://www.linkedin.com/in/nuha-n-488424b8/" target="_blank">プロファイルを見る</a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div id="background">
+                  <img src="images/support/Gery.png" alt="" />
+                </div>
+                <div id="background-paragraph">
+                  <h1 class="fs-3">Gerry Sabar</h1>
+                  <p><span class="special">Specialization:</span> Software Engineer</p>
+                  <br />
+                  <p style="padding: 0 20px">8年間経験豊富なソフト開発とテスティング、例えば分析やデータモデリングやでサインやプロジェクト納品や色んな組織的なレベルと共同作業をしております。リーダーからビジネスにマネージする事です。</p>
+                  <br />
+                  <br />
+                  <br />
+                  <a href="https://www.linkedin.com/in/gerrysabar/" target="_blank">プロファイルを見る</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
+            <h1>メンター</h1>
             <div class="row">
               <div class="col-lg-4">
                 <div id="background">
@@ -274,7 +321,11 @@
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Saki Yanagihara</h1>
-                  <p>多文化的なバックグラウンドを持つ国際教育愛好者で、現在は日本で教育の修士号を取得中です。異文化理解と学術的成長を促進することに情熱を傾けております</p>
+                  <p><span class="special">Specialization:</span> Entreprenership, Mentoring skills</p>
+
+                  <p style="padding: 0 20px">多文化的なバックグラウンドを持つ国際教育愛好者で、現在は日本で教育の修士号を取得中です。異文化理解と学術的成長を促進することに情熱を傾けております。</p>
+                  <br />
+                  <br />
                   <a href="https://www.facebook.com/profile.php?id=100008867921448" target="_blank">プロファイルを見る</a>
                 </div>
               </div>
@@ -284,40 +335,33 @@
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Naho Chujo</h1>
-                  <p>ケニアでの元国際NPO社会福祉士およびグリーンディ協会代表理事しかも、経験豊富なキャリア教育コミュニティマネジメントです。GCIデータサイエンスの２０２３年の夏に卒業生です。現在はデータサイエンスとして働いております。</p>
+                  <p><span class="special">Specialization:</span> Researcher, Analysis, Mentoring.</p>
+                  <p style="padding: 0 20px">
+                    ケニアでの元国際NPO社会福祉士およびグリーンディ協会代表理事しかも、経験豊富なキャリア教育コミュニティマネジメントです。GCIデータサイエンスの２０２３年の夏に卒業生です。現在はデータサイエンスとして働いております。
+                  </p>
+                  <br />
                   <a href="https://www.linkedin.com/in/naho-chujo-1731b9179/" target="_blank">プロファイルを見る</a>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div id="background">
-                  <img src="images/support/Gery.png" alt="" />
-                </div>
-                <div id="background-paragraph">
-                  <h1 class="fs-3">Gerry Sabar</h1>
-                  <p>8年間経験豊富なソフト開発とテスティング、例えば分析やデータモデリングやでサインやプロジェクト納品や色んな組織的なレベルと共同作業をしております。リーダーからビジネスにマネージする事です。</p>
-                  <a href="https://www.linkedin.com/in/gerrysabar/" target="_blank">プロファイルを見る</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="row">
               <div class="col-lg-4">
                 <div id="background">
                   <img src="images/support/Douglus.png" alt="" />
                 </div>
                 <div id="background-paragraph">
                   <h1 class="fs-3">Douglas Fortunatus</h1>
-                  <p>
+                  <p><span class="special">Specialization:</span> Software Engineer</p>
+                  <p style="padding: 0 20px">
                     電子商取引からAPIsまでにエンジニアにプロジェクトを開発の案内しております。Node-APIの開発を共同作業するや学生達に学ぶ事をサポートするやプロジェクト作ってるのがチームワークでReact, HTML, CSS, PHP, Laravel, Vue.js, Phyton,
                     Javascriptを使っております。
                   </p>
-
                   <a href="https://www.linkedin.com/in/douglas-fortunatus-355848199/" target="_blank">プロファイルを見る</a>
                 </div>
               </div>
             </div>
           </div>
+          <!-- <div class="swiper-slide">
+            <div class="row"></div>
+          </div> -->
           ...
         </div>
 
@@ -367,7 +411,7 @@
     <!-- COUNTRIES SECTION END -->
 
     <!-- PRICE LIST SECTION START -->
-    <section class="container text-center price">
+    <!-- <section class="container text-center price">
       <div class="row">
         <div class="col">
           <div class="card" style="width: 18rem">
@@ -397,7 +441,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- PRICE LIST SECTION END -->
 
     <!-- NEWS SECTION START -->
@@ -434,7 +478,7 @@
                 <p>インドネシアの学生に初めてITブートキャンプを行いました。</p>
               </div>
               <div class="col mt-lg-1 border">
-                <img src="images/support/CEO/03.jpg" alt="" />
+                <img src="../images/support/CEO/5.jpg" alt="" />
                 <h1 class="fs-3">2023.Sep Mio Tsunoda,</h1>
                 <p>ダラジャパンの最高経営責任者はAPT WOMENになりました (ACCELERATION PROGRAM IN TOKYO FOR WOMEN)</p>
               </div>

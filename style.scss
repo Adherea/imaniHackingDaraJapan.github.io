@@ -18,6 +18,9 @@ nav {
   height: 70px;
   color: #ffffff;
   ul {
+    .mobileServices {
+      display: none;
+    }
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -148,10 +151,13 @@ nav {
     background-color: transparent;
     padding: 3px 10px;
     color: #000080;
+    border-radius: 10px;
     border: 1px solid #000080;
   }
   .forDesktop:hover {
     cursor: pointer;
+    color: #535353;
+    border: 1px solid #fff;
   }
 }
 
@@ -168,7 +174,7 @@ nav {
     left: -8px;
     top: -3px;
     opacity: 0;
-    z-index: 2;
+    z-index: 99;
   }
   input:hover {
     cursor: pointer;
@@ -202,6 +208,7 @@ nav {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  transition: 0.3s linear;
 
   a:hover {
     color: black;
@@ -431,12 +438,12 @@ nav {
     width: 300px;
   }
 }
-
 #service {
   padding-top: 120px;
   margin: 50px 0;
 }
 
+// MENTORS START
 .swiper {
   max-width: 1200px;
   padding: 0 300px;
@@ -455,8 +462,11 @@ nav {
     margin-bottom: 100px;
     background-color: #fff;
     margin-top: -30px;
-    padding: 40px 0;
+    padding: 40px 5px;
     border-radius: 40px 40px 30px 30px;
+    .special {
+      font-weight: bolder;
+    }
   }
   a {
     background-color: #58bbff;
@@ -472,87 +482,15 @@ nav {
   }
 }
 
-// SERVICES END
+// MENTORS END
 
-.support {
-  background-color: #add8e6;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  .row2 {
-    display: flex;
-    background-color: #add8e6;
-    align-items: start;
-    justify-content: space-around;
-
-    .gajah {
-      width: 170px;
-    }
-    .japan {
-      width: 450px;
-    }
-  }
-  img {
-    width: 300px;
-  }
-}
-
+// PRICE START
 .starting {
   max-width: 700px;
   margin: 0 auto;
   margin-top: 200px;
   text-align: center;
 }
-
-// PRICE START
-// .harga {
-//   margin: 140px auto;
-//   padding: 20px;
-//   border-radius: 20px;
-//   border: none !important;
-//   box-shadow: 20px 0px 50px 0px rgb(240, 240, 240);
-//   .title {
-//     padding-top: 20px;
-//     display: flex;
-//     justify-content: space-around;
-//   }
-//   hr {
-//     color: #c7c7c7 !important;
-//   }
-
-//   #note {
-//     margin-top: 70px;
-//   }
-//   #benefit {
-//     max-width: 500px;
-//     line-height: 10px;
-//   }
-//   .lower {
-//     a {
-//       border-radius: 10px;
-//       padding: 7px 20px;
-//       color: #fff7f7;
-//       border: 2px solid #407bff;
-//       background-color: #407bff;
-//       font-weight: bold;
-//       border-radius: 20px;
-//     }
-//     a:hover {
-//       border: 2px solid #fff;
-//       background-color: #6e99f7;
-//       color: #fff;
-//     }
-//     i > p {
-//       color: black !important;
-//     }
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-around;
-//   }
-// }
-// .harga:hover {
-//   cursor: default;
-// }
 
 .price {
   max-width: 300px;
@@ -595,6 +533,31 @@ nav {
   }
 }
 // NEWS END
+
+// SUPPORT START
+.support {
+  background-color: #add8e6;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  .row2 {
+    display: flex;
+    background-color: #add8e6;
+    align-items: start;
+    justify-content: space-around;
+
+    .gajah {
+      width: 170px;
+    }
+    .japan {
+      width: 450px;
+    }
+  }
+  img {
+    width: 300px;
+  }
+}
+// SUPPORT END
 
 // FOOTER START
 
@@ -726,7 +689,6 @@ footer {
     display: flex;
     text-align: center;
     flex-direction: column;
-    // margin-left: 8vw;
     font-size: 21px;
     margin-top: 30px;
   }
@@ -737,6 +699,91 @@ footer {
   .terms {
     margin-top: 40px;
     text-align: center;
+  }
+}
+
+.punchlines {
+  margin-top: -100px;
+
+  h1 {
+    text-align: center;
+  }
+  .hero,
+  .paragraph {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 30px;
+  }
+}
+.forCompanies {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  p {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .select {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    #option {
+      border-radius: 20px;
+      padding: 5px 20px;
+      border: 2px solid #c9c9c9;
+    }
+  }
+  .erabu {
+    margin: 10px 0;
+  }
+  #display-content {
+    margin: 0 auto;
+
+    .course1,
+    .course2 {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 40px;
+    }
+
+    .title {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .buttonAction {
+      width: 300px;
+      margin: 20px auto;
+      button {
+        border: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+        color: #fff;
+        transition: 0.3s linear;
+      }
+      button:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      .web {
+        background-color: #0097db;
+      }
+
+      .mobile {
+        background-color: #ffc100;
+      }
+    }
+
+    .授業 {
+      h3 {
+        font-size: 20px;
+        line-height: 50px;
+      }
+    }
   }
 }
 
@@ -866,6 +913,9 @@ footer {
     }
 
     ul {
+      .mobileServices {
+        display: block;
+      }
       position: absolute;
       background-color: #adcce6;
       right: 0;
@@ -911,10 +961,8 @@ footer {
       background-color: transparent;
       padding: 3px 10px;
       color: #000080;
+      border-radius: 10px;
       border: 1px solid #000080;
-    }
-    #languageDropDownMobilenya:hover {
-      cursor: pointer;
     }
   }
 
