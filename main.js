@@ -39,35 +39,32 @@ document.addEventListener("click", (e) => {
   }
 });
 
-function sendMail() {
-  let params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
-  const serviceID = "service_h4ubllu";
-  const templateID = "template_byb3f8t";
+// function sendMail() {
+//   let params = {
+//     name: document.getElementById("name").value,
+//     email: document.getElementById("email").value,
+//     message: document.getElementById("message").value,
+//   };
+//   const serviceID = "service_h4ubllu";
+//   const templateID = "template_byb3f8t";
 
-  emailjs
-    .send(serviceID, templateID, params)
-    .then((res) => {
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("message").value = "";
-      console.log(res);
-      alert("your message sent successfully");
-    })
-    .catch((err) => console.log(err));
-}
+//   emailjs
+//     .send(serviceID, templateID, params)
+//     .then((res) => {
+//       document.getElementById("name").value = "";
+//       document.getElementById("email").value = "";
+//       document.getElementById("message").value = "";
+//       console.log(res);
+//       alert("your message sent successfully");
+//     })
+//     .catch((err) => console.log(err));
+// }
 
 document.getElementById("languageDropdown").addEventListener("change", function () {
   const selectedLanguage = this.value;
   if (selectedLanguage === "english") {
     window.location.href = "../index.html";
   } else if (selectedLanguage === "japanese") {
-    window.location.href = "../日本語/index.html";
+    window.location.href = "日本語/index.html";
   }
 });
-
-
-

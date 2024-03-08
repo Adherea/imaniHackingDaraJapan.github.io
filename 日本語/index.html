@@ -32,7 +32,10 @@
             <li><a href="ForCompanies.html" style="font-size: 13px">会社のコース</a></li>
           </ul>
         </li>
+        <li class="mobileServices"><a href="#service">サービス</a></li>
+
         <li><a href="#news">ニュース</a></li>
+        <li class="mentorship"><a href="#mentors">メンター</a></li>
         <li class="dropdown">
           <a href="#mentors">メンバー</a>
           <ul class="dropdown-content">
@@ -41,10 +44,9 @@
           </ul>
         </li>
       </ul>
-
       <select id="languageDropdownMobilenya">
-        <option class="eigo" value="english">English</option>
-        <option class="nihon" value="japanese">Japanese</option>
+        <option class="eigo" value="english">英語</option>
+        <option class="nihon" value="japanese">日本語</option>
       </select>
 
       <div class="menu-toggle">
@@ -55,7 +57,7 @@
       </div>
 
       <div class="contact" id="registrasi">
-        <button class="btn fw-bolder" id="openPopup">連絡する <i class="fa-regular fa-paper-plane"></i></button>
+        <button class="btn fw-bolder" id="openPopup">お問い合わせ</button>
       </div>
 
       <div class="popup" id="myPopup">
@@ -73,7 +75,6 @@
           <button type="submit" onclick="sendMail()">Submit</button>
         </form>
 
-        <p class="text-center m-lg-4">*メッセージをお待ちしております！（^^）</p>
         <button class="btn-close" id="closePopup"></button>
       </div>
 
@@ -86,27 +87,18 @@
     <!-- NAVBAR END -->
 
     <!-- HERO START -->
+
     <section id="home" class="hero" style="margin-bottom: -50px">
-      <!-- <div id="particles-js"></div> -->
-      <div class="gambar animate__animated animate__fadeInRight">
-        <img src="images/vectors/Code typing-rafiki.png" alt="" />
-      </div>
-      <div class="caption animate__animated animate__fadeInUp">
-        <h1 class="fw-semibold">国境を超えたグローバルなテックリーダーを育ております。</h1>
-        <p>一緒に国際的なITエンジニアになりましょう！このプログラムは色んなITエンジニアリングスキルを学びたいあなたに、一緒に国際的なITエンジニアやITリーダーになりましょう！</p>
-        <a href="register.html" class="btn">今参加する！ <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+      <div class="container">
+        <div class="caption animate__animated animate__fadeInUp">
+          <h1 class="fw-semibold">国境を超えたグローバルなテックリーダーを育ております。</h1>
+          <p>一緒に国際的なITエンジニアになりましょう！このプログラムは色んなITエンジニアリングスキルを学びたいあなたに、一緒に国際的なITエンジニアやITリーダーになりましょう！</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScAAd-5FjDuZgDNXP0clMEqClXk9qLvE7wuf6CD32RjTEQnoQ/viewform" class="btn">今参加する！ <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
       </div>
     </section>
 
     <!-- HERO END -->
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="padding-top: 25px">
-      <path
-        fill="#ADD8E6"
-        fill-opacity="1"
-        d="M0,224L48,218.7C96,213,192,203,288,181.3C384,160,480,128,576,144C672,160,768,224,864,229.3C960,235,1056,181,1152,160C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-      ></path>
-    </svg>
 
     <!-- ABOUT SECTION START-->
     <section class="about animate-left" id="about">
@@ -139,7 +131,7 @@
           <a href="about.html" class="btn">もっと読む <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i></a>
         </div>
         <div>
-          <img width="450px" src="images/vectors/children.png" alt="" />
+          <img width="450px" src="../images/univelcity.jpg" alt="" style="border-radius: 79% 21% 23% 77% / 40% 62% 38% 60%; border: 4px solid #58bbff" />
         </div>
       </div>
     </section>
@@ -155,20 +147,20 @@
             <i style="font-size: 41px" class="fa-solid fa-circle-play"></i>
             <i class="fa-solid fa-clapperboard-play"></i>
             <h1 class="fs-3">ビデオ セッション</h1>
-            <p>学生達は講義からコースをもらって、しかも、やりたいIT仕事のために優良な知識のテクノロジーを使い方を教えております。</p>
+            <p>学生たちは将来追求したい技術を深く理解するためにコースを受講します。この教育の取り組みは彼らが将来の職業目標に完璧に合致し、強固な基盤を築くのに役立ちます。</p>
           </div>
           <div class="col-md-4 mt-5">
             <i style="font-size: 41px" class="fa-solid fa-person-chalkboard"></i>
             <h1 class="fs-3">メンターリング　セッション</h1>
-            <p>プロジェクトや、ソフトスキルや、ハードスキルついて話し合うのためにメンターリング　セッションがあります。その上にメンターと学生の将来の予定について話す事も出来ます。</p>
+            <p>学生はプロジェクトについてメンターと会い、ソフトスキルとハードスキルを向上させます。また、将来の計画について尋ね、有益な対話を生み出し、学びや個人および専門的な成長の計画をサポートします。</p>
           </div>
           <div class="col-md-4 mt-5">
             <i style="font-size: 41px" class="fa-solid fa-chalkboard"></i>
             <h1 class="fs-3">講義セッション</h1>
-            <p>週末には学生達がスキル配達についてzoomライブがあります。将来でこのブートキャンプを参加しました後で学生達はIT仕事を準備するために自己啓発やソフトスキルやハードスキルのコースをもらっております。</p>
+            <p>毎週、学生は当社のプログラミングブートキャンプに参加した後、エンジニアとしての将来の仕事に備えて、自己開発、ソフトスキル、ハードスキルを含む開発スキルについてのZoomライブ講義を受けます。</p>
           </div>
         </div>
-        <a style="color: #fff; border-radius: 10px; padding: 10px 20px; border: 2px solid #58bbff; background-color: #58bbff; font-weight: bold" href="contents.html" class="btn"
+        <a style="color: #fff; border-radius: 10px; padding: 10px 20px; border: 2px solid #58bbff; background-color: #58bbff; font-weight: bold" href="contents.html" class="btn my-5"
           >もっと読む <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i
         ></a>
       </div>
@@ -219,7 +211,7 @@
             <p class="fs-6">どういう風に効果的な伝達するを観客にお伝えております。</p>
           </div>
         </div>
-        <a href="Services.html" class="btn">もっと読む <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i></a>
+        <a href="Services.html" class="btn m-5">もっと読む <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i></a>
       </div>
     </section>
 
@@ -409,40 +401,6 @@
       </div>
     </section>
     <!-- COUNTRIES SECTION END -->
-
-    <!-- PRICE LIST SECTION START -->
-    <!-- <section class="container text-center price">
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title">Tanzania price</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">See more detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title">Indonesia price</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">See more detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title">Philipines price</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">See more detail</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- PRICE LIST SECTION END -->
 
     <!-- NEWS SECTION START -->
 

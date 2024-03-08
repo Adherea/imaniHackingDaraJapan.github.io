@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="send.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("v8azpWS5LjpzRbs-A");
+      })();
+    </script>
   </head>
   <body>
     <!-- NAVBAR START -->
@@ -60,7 +67,7 @@
 
       <div class="popup" id="myPopup">
         <h2>Contact Us</h2>
-        <form>
+        <form onsubmit="sendMails(event)">
           <label for="email">Name:</label>
           <input type="text" id="name" name="name" required /><br />
 
@@ -70,7 +77,7 @@
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="4" required></textarea><br />
 
-          <button type="submit" onclick="sendMail()">Submit</button>
+          <button type="submit">Submit</button>
         </form>
 
         <button class="btn-close" id="closePopup"></button>
@@ -87,25 +94,17 @@
     <!-- HERO START -->
     <section id="home" class="hero" style="margin-bottom: -50px">
       <!-- <div id="particles-js"></div> -->
-      <div class="gambar animate__animated animate__fadeInRight">
-        <img src="images/vectors/Code typing-rafiki.png" alt="" />
-      </div>
-      <div class="caption animate__animated animate__fadeInUp">
-        <h1 class="fw-semibold">Produce a global Tech leader beyond borders.</h1>
-        <p>Becoming Global Tech Leaders Together. We empower people with advanced tech skills, crossing borders to create future tech innovators. Join us on this journey to become a global tech leader.</p>
-        <a href="register.html" class="btn">JOIN US NOW! <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+      <div class="container">
+        <div class="gambar animate__animated animate__fadeInRight"></div>
+        <div class="caption animate__animated animate__fadeInUp">
+          <h1 class="fw-semibold">Produce a global Tech leader beyond borders.</h1>
+          <p>Becoming Global Tech Leaders Together. We empower people with advanced tech skills, crossing borders to create future tech innovators. Join us on this journey to become a global tech leader.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScAAd-5FjDuZgDNXP0clMEqClXk9qLvE7wuf6CD32RjTEQnoQ/viewform" class="btn">JOIN US NOW! <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
       </div>
     </section>
 
     <!-- HERO END -->
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="padding-top: 25px">
-      <path
-        fill="#ADD8E6"
-        fill-opacity="1"
-        d="M0,224L48,218.7C96,213,192,203,288,181.3C384,160,480,128,576,144C672,160,768,224,864,229.3C960,235,1056,181,1152,160C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-      ></path>
-    </svg>
 
     <!-- ABOUT SECTION START-->
     <section class="about animate-left" id="about">
@@ -138,7 +137,7 @@
           <a href="about.html" class="btn">Read more <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i></a>
         </div>
         <div>
-          <img width="450px" src="images/vectors/children.png" alt="" />
+          <img width="450px" src="images/univelcity.jpg" alt="" style="border-radius: 79% 21% 23% 77% / 40% 62% 38% 60%; border: 4px solid #58bbff" />
         </div>
       </div>
     </section>
@@ -154,12 +153,18 @@
             <i style="font-size: 41px" class="fa-solid fa-circle-play"></i>
             <i class="fa-solid fa-clapperboard-play"></i>
             <h1 class="fs-3">Video Session</h1>
-            <p>Students will have a course that given from the lectures, in order to have a great knowledge of the technology that student want to be in the future.</p>
+            <p>
+              Students take courses to deeply understand the technology they want to pursue in the future. This educational effort aims to help thoroughly grasp the skills, perfectly fitting their career goals and building a strong
+              foundations for their future professional journey.
+            </p>
           </div>
           <div class="col-md-4 mt-5">
             <i style="font-size: 41px" class="fa-solid fa-person-chalkboard"></i>
             <h1 class="fs-3">Mentoring session</h1>
-            <p>Students meet their mentors in order to have a disscuss about the projects, soft skills and hard skills, also asking about the future plan of the Students.</p>
+            <p>
+              Students meet with their mentors to talk about projects and improve their soft and hard skills. They also ask about their future plans, creating a meaningful conversation that helps them learn and plan for personal and
+              professional growth.
+            </p>
           </div>
           <div class="col-md-4 mt-5">
             <i style="font-size: 41px" class="fa-solid fa-chalkboard"></i>
@@ -215,7 +220,7 @@
             <p class="fs-6">How to Effectively communicate Tech info to non-tech audience</p>
           </div>
         </div>
-        <a href="Services.html" class="btn">Read more <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i></a>
+        <a href="Services.html" class="btn mt-5">Read more <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i></a>
       </div>
     </section>
 
@@ -414,42 +419,6 @@
     </section>
     <!-- COUNTRIES SECTION END -->
 
-    <!-- PRICE LIST SECTION START -->
-    <!-- <div class="starting fs-3 p-4" style="margin-bottom: -120px"></div>
-
-    <section class="container text-center price">
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title">Tanzania price</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">See more detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title">Indonesia price</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">See more detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title">Philipines price</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">See more detail</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- PRICE LIST SECTION END -->
-
     <!-- NEWS SECTION START -->
 
     <section class="container text-center mentor" id="news" data-aos="fade-up">
@@ -551,6 +520,29 @@
       <p class="copy">© 2023 Imani Academy | Darajapan</p>
     </footer>
 
+    <script src="main.js"></script>
+    <!-- <script>
+      function sendMail() {
+        let params = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          message: document.getElementById("message").value,
+        };
+        const serviceID = "service_h4ubllu";
+        const templateID = "template_byb3f8t";
+
+        emailjs
+          .send(serviceID, templateID, params)
+          .then((res) => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+            console.log(res);
+            alert("your message sent successfully");
+          })
+          .catch((err) => console.log(err));
+      }
+    </script> -->
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/83e72ec066.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

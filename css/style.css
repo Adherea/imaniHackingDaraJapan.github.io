@@ -15,9 +15,9 @@ nav {
   display: flex;
   align-items: center !important;
   justify-content: space-around;
-  background-color: #add8e6;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   height: 70px;
-  color: #ffffff;
 }
 nav ul {
   display: flex;
@@ -26,6 +26,7 @@ nav ul {
   font-size: 0.8rem;
   padding-top: 10px;
   width: 40%;
+  background-color: transparent;
 }
 nav ul .mobileServices {
   display: none;
@@ -34,7 +35,7 @@ nav ul .mentorship {
   display: none;
 }
 nav ul li a {
-  color: #0e9ac5;
+  color: #183448;
   font-size: 1.2rem;
   transition: 0.4s linear;
   text-decoration: none !important;
@@ -50,7 +51,7 @@ nav ul li a::after {
   height: 4px;
   width: 100%;
   left: 0;
-  background-color: #ffffff;
+  background-color: #407bff;
   transition: 0.3s;
   transition-timing-function: ease-in-out;
   transform: scaleX(0);
@@ -59,7 +60,7 @@ nav ul li a:hover::after {
   transform: scaleX(1);
 }
 nav ul li a:hover {
-  color: #fff;
+  color: #2d4adb;
   cursor: pointer;
 }
 nav .logo {
@@ -77,7 +78,8 @@ nav .contact button {
   border-radius: 16px;
 }
 nav .contact button:hover {
-  border: 2px solid #fff;
+  color: #84a8f5;
+  border: 2px solid #84a8f5;
 }
 nav .popup {
   display: none;
@@ -187,7 +189,7 @@ nav .forDesktop:hover {
   position: absolute;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #fff;
+  background-color: #93d1f0;
   padding-bottom: 10px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -200,25 +202,22 @@ nav .forDesktop:hover {
   transition: 0.3s linear;
 }
 .dropdown:hover .dropdown-content a:hover {
-  color: black;
+  color: #407bff;
 }
 
 .hero {
-  display: flex;
-  flex-direction: row-reverse;
+  background: linear-gradient(to right, rgba(97, 97, 97, 0.7), rgba(0, 0, 0, 0)), url("../images/hero-new.jpg");
   background-size: cover;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #add8e6;
-  padding-top: 70px;
-  padding-bottom: 0;
-}
-.hero img {
-  max-width: 600px;
+  padding: 280px 0;
+  width: 100vw;
+  background-attachment: fixed; /* Tambahkan ini */
+  height: 100vh;
+  color: #fff;
+  background-position-y: -20px;
 }
 .hero h1 {
-  font-size: 2.2rem;
-  max-width: 370px;
+  font-size: 3.2rem;
+  max-width: 520px;
   font-weight: bolder;
 }
 .hero p {
@@ -244,17 +243,20 @@ nav .forDesktop:hover {
 
 .about {
   flex-direction: row-reverse;
-  margin-top: -50px;
 }
 .about .story {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-evenly;
-  margin: 30px 0;
+}
+.about h1 {
+  padding: 50px 0;
 }
 .about .paragraph p {
   max-width: 500px;
+  font-size: 18px;
+  padding: 30px 0;
 }
 .about .paragraph a {
   background-color: #58bbff;
@@ -305,6 +307,9 @@ nav .forDesktop:hover {
 }
 .konten #awd {
   background-color: #0e9ac5;
+}
+.konten .row h1 {
+  padding: 20px 0;
 }
 
 .countries {
@@ -365,10 +370,14 @@ nav .forDesktop:hover {
 }
 
 .category img {
-  width: 150px;
+  width: 100px;
 }
 .category h1 {
-  margin-bottom: 80px;
+  padding: 70px 0;
+  font-weight: bolder;
+}
+.category p {
+  font-size: 20px;
 }
 .category .title {
   margin: 90px 0;
@@ -408,8 +417,7 @@ nav .forDesktop:hover {
 }
 
 #service {
-  padding-top: 120px;
-  margin: 50px 0;
+  padding-top: 0px;
 }
 
 .swiper {
@@ -710,6 +718,10 @@ footer .address a {
   line-height: 50px;
 }
 
+.awd {
+  height: 250px;
+}
+
 /*
 =============================================================================================================================================================================================================================================================================================================
 
@@ -859,10 +871,7 @@ footer .address a {
     border: 1px solid #000080;
   }
   .hero {
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    padding: 50px 20px;
+    padding: 190px 20px;
     background-color: #add8e6;
   }
   .hero p,

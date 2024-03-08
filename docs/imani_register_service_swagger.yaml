@@ -1,0 +1,75 @@
+openapi: 3.0.0
+info:
+  title: Imani Register Service Express API
+  description: API for user registration, login, and logout
+  version: 1.0.0
+servers:
+  - url: https://api.example.com/api/auth
+paths:
+  /register:
+    post:
+      summary: Register a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: user@example.com
+                username:
+                  type: string
+                  example: johndoe
+                password:
+                  type: string
+                  example: P@ssw0rd123
+      responses:
+        '201':
+          description: User registered successfully
+        '400':
+          description: Invalid user input or duplicate email/username
+        '500':
+          description: Unexpected error during registration
+  /login:
+    post:
+      summary: Login a user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: user@example.com
+                password:
+                  type: string
+                  example: P@ssw0rd123
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                    example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpורהnyaVCJ9.eyJ1c2VyX2lkIjoiYWRtaW4iLCJ1c2VybmFtZSI6Im5hbWUiLCJpYXQiOjE2NTYyMjI5MTF9._54354435345435543554345"
+        '401':
+          description: Invalid email or password
+        '500':
+          description: Unexpected error during login
+  /logout:
+    post:
+      summary: Logout a user
+      responses:
+        '200':
+          description: Logged out successfully
+        '401':
+          description: Unauthorized
+        '500':
+          description: Unexpected error during logout

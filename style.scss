@@ -14,9 +14,8 @@ nav {
   display: flex;
   align-items: center !important;
   justify-content: space-around;
-  background-color: #add8e6;
+  backdrop-filter: blur(10px);
   height: 70px;
-  color: #ffffff;
   ul {
     .mobileServices {
       display: none;
@@ -30,9 +29,10 @@ nav {
     .mentorship {
       display: none;
     }
+    background-color: transparent;
     li {
       a {
-        color: #0e9ac5;
+        color: #183448;
         font-size: 1.2rem;
         transition: 0.4s linear;
         text-decoration: none !important;
@@ -47,7 +47,7 @@ nav {
         height: 4px;
         width: 100%;
         left: 0;
-        background-color: #ffffff;
+        background-color: #407bff;
         transition: 0.3s;
         transition-timing-function: ease-in-out;
         transform: scaleX(0);
@@ -56,7 +56,7 @@ nav {
         transform: scaleX(1);
       }
       a:hover {
-        color: #fff;
+        color: #2d4adb;
         cursor: pointer;
       }
     }
@@ -77,7 +77,8 @@ nav {
       border-radius: 16px;
     }
     button:hover {
-      border: 2px solid #fff;
+      color: #84a8f5;
+      border: 2px solid #84a8f5;
     }
   }
 
@@ -198,7 +199,7 @@ nav {
   position: absolute;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #fff;
+  background-color: #93d1f0;
   padding-bottom: 10px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -211,7 +212,7 @@ nav {
   transition: 0.3s linear;
 
   a:hover {
-    color: black;
+    color: #407bff;
   }
 }
 
@@ -219,21 +220,18 @@ nav {
 
 // HERO SECTION START
 .hero {
-  display: flex;
-  flex-direction: row-reverse;
+  background: linear-gradient(to right, rgba(97, 97, 97, 0.7), rgba(0, 0, 0, 0)), url("../images/hero-new.jpg");
   background-size: cover;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #add8e6;
-  padding-top: 70px;
-  padding-bottom: 0;
-  img {
-    max-width: 600px;
-  }
+  padding: 280px 0;
+  width: 100vw;
+  background-attachment: fixed; /* Tambahkan ini */
+  height: 100vh;
+  color: #fff;
+  background-position-y: -20px;
 
   h1 {
-    font-size: 2.2rem;
-    max-width: 370px;
+    font-size: 3.2rem;
+    max-width: 520px;
     font-weight: bolder;
   }
   p {
@@ -267,13 +265,18 @@ nav {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
-    margin: 30px 0;
+    // margin: 30px 0;
+  }
+  h1 {
+    padding: 50px 0;
   }
   flex-direction: row-reverse;
-  margin-top: -50px;
+  // margin-top: -50px;
   .paragraph {
     p {
       max-width: 500px;
+      font-size: 18px;
+      padding: 30px 0;
     }
     a {
       background-color: #58bbff;
@@ -329,6 +332,11 @@ nav {
   margin: 190px 0;
   #awd {
     background-color: #0e9ac5;
+  }
+  .row {
+    h1 {
+      padding: 20px 0;
+    }
   }
 }
 
@@ -395,10 +403,15 @@ nav {
 
 .category {
   img {
-    width: 150px;
+    width: 100px;
   }
   h1 {
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
+    padding: 70px 0;
+    font-weight: bolder;
+  }
+  p {
+    font-size: 20px;
   }
   .title {
     margin: 90px 0;
@@ -439,8 +452,8 @@ nav {
   }
 }
 #service {
-  padding-top: 120px;
-  margin: 50px 0;
+  padding-top: 0px;
+  // margin: 50px 0;
 }
 
 // MENTORS START
@@ -787,10 +800,15 @@ footer {
   }
 }
 
+.awd {
+  height: 250px;
+}
+
 /*
 =============================================================================================================================================================================================================================================================================================================
 
 */
+
 @media screen and (max-width: 768px), (max-width: 820px), (max-width: 1027px) {
   nav {
     justify-content: space-around;
@@ -967,14 +985,12 @@ footer {
   }
 
   .hero {
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    padding: 50px 20px;
+    padding: 190px 20px;
     background-color: #add8e6;
     p,
     h1 {
       margin: 32px 0;
+      // font-weight: 400px;
     }
     img {
       padding-top: 60px;
